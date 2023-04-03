@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(36, 36, 36);
+}
+
+h1 {
+    text-align: center;
+    color: antiquewhite;
+}
+
+h2 {
+    text-align: center;
+    color: antiquewhite;
+}
+#kierrosten_pisteet {
+    font-size: 2em;
+    text-align: center;
+    color: antiquewhite;
+}
+#noppien_maara {
+    text-align: center;
+    color: antiquewhite;
+}
+
+button {
+    width: 80px;
+}
+
+
+#pelaajat {
+    width: 80px;
+}
+
+#pelaajien_nimet {
+    text-align: center;
+}
+
+header {
+    color: antiquewhite;
+    border-bottom: 1px solid white
+}
+
+#pelaa {
+    text-align: center;
+}
+
+#pisteiden_maara {
+    text-align: center;
+}
+
+.die {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: white;
+  }
+
+#peli {
+    text-align: center;
+}
+
+#ohjeet {
+    color: antiquewhite;
+    text-align: center;
+}
+
+#winner {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+#current-player {
+    color: antiquewhite;
+    text-align: center;
+}
+
+#ykkonen {
+    color: antiquewhite;
+    text-align: center;
+}
+
+#triplat {
+    color: antiquewhite;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}

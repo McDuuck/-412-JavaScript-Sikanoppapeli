@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p>Pelaajat: </p>
+    </header>
+    <h1>Noppa</h1>
+    
+    <br>
+    <div id="winner"></div>
+    <section id="poisto">
+        <h2>Noppien määrä:</h2>
+        <section id="noppien_maara">
+            <input type="radio" id="yks" name="noppa" value="1">
+            <label for="yks">1 Noppa</label>
+            <input type="radio" id="kaks" name="noppa" value="2">
+            <label for="kaks">2 Noppaa</label>
+        </section>
+        <section id="pelaajien_nimet">
+            <h2>Pelaajien nimet:</h2>
+            <input type="text" id="pelaajat">
+            <input id="lisaa" type="submit" value="Lisää">
+        </section>
+        <br>
+        <section id="pisteiden_maara">
+            <h2>Pisteiden määrä:</h2>
+            <input type="text" id="pisteet">
+        </section>
+        <br>
+        <section id="pelaa">
+            <input type="submit" id="pelaa" value="Pelaa!">
+        </section>
+    </section>
+    <section id="peli">
+        <h2>Nopat</h2>
+        <div id="dice-container">
+            <div class="die" id="dice1"></div>
+            <div class="die" id="dice2"></div>
+        </div>
+        <br>
+        <section id="kierrosten_pisteet">
+            <h3>Kierroksen pisteet:</h3>
+        </section>
+        <br>
+        <button id="pyorayta" value="Pyöräytä!">Pyöräytä</button>
+        <br>
+        <br>
+        <button id="vaihda" value="vaihda">Vuoro seuraavalle</button>
+    </section>
+    <h2 id="current-player"></h2>
+    <br>
+    <h2 id="ykkonen"></h2>
+    <h2 id="triplat"></h2>
+    <button id="ohjebutton" value="Ohjeet!">Ohjeet!</button>
+    <section id="ohjeet">
+        <h3>Säännöt - Sika yhdellä nopalla</h3>
+        <p>Pelin tarkoitus on kerätä sata pistettä tai enemmän (pistemäärän voi sopia ennen peliä) heittämällä noppaa tai noppia ja laskemalla heittojen summa yhteen.</p>
+            
+            <p>Pelaaja heittää omalla vuorollaan noppaa niin pitkään, kunnes</p>
+            
+            <p>a. heittää ykkösen</p>
+            <p>b. päättää lopettaa heittämisen.</p>
+            <p>Jos pelaaja heittää ykkösen, hänen vuoronsa loppuu ja sen kierroksen heittojen summa nollataan. Vuoro siirtyy seuraavalle pelaajalle. 
+                Jos pelaaja päättää lopettaa heittämisen ennen kuin hän heittää ykkösen, heittojen summa lasketaan yhteen ja lisätään edellisen kierroksen summaan. 
+                Tämän jälkeen vuoro siirtyy seuraavalle pelaajalle.</p>
+        <br>
+        <h3>Säännöt - Sika kahdella nopalla</h3>
+        <p>Sikaa voit pelata kahdella nopalla, jolloin säännöt muuttuvat hieman: Kun heität tuplat, saat tuplapisteet (esim. kaksi kolmosta on 12 pisteen arvoinen heitto) Kun heität kaksi ykköstä,
+             saat 25 pistettä Kun heität vain toisella nopalla ykkösen, vuoro siirtyy seuraavalle pelaajalle etkä saa pisteitä Kun heität kolme tuplaa peräkkäin, 
+             vuoro siirtyy seuraavalle pelaajalle etkä saa pisteitä. 
+             Sika ei siis ole tämän monimutkaisempi noppapeli. 
+            Se on nopeatempoinen peli, jonka parissa aika kuluu rattoisasti</p>
+    </section>
+
+    <br>
+    <footer>
+        <audio controls="controls" loop="loop">
+            <source src="casino_banger.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
